@@ -10,7 +10,7 @@ public class SensorProducer {
       props.put("bootstrap.servers", "localhost:9092,localhost:9093");
       props.put("key.serializer","org.apache.kafka.common.serialization.StringSerializer");
       props.put("value.serializer", "org.apache.kafka.common.serialization.StringSerializer");
-      props.put("partitioner.class", "SensorPartitioner"); //this is a custom partitioner made in another file
+      props.put("partitioner.class", "SensorPartitioner"); //this is a custom partitioner made in class SensorPartitioner
       props.put("speed.sensor.name", "TSS"); //speed.sensor.name is a custom property. its used to suply the name of the sonsro 
       //which reqires special treatment
 
